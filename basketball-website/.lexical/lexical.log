@@ -1,0 +1,60 @@
+11:22:19.815 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+11:22:19.815 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+11:22:19.816 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+11:22:19.816 [info] Application logger started at :nonode@nohost
+11:22:21.862 [error] FATAL: Lexical is not compatible with Elixir 1.18.0
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
+11:51:21.676 [debug] Child {LoggerFileBackend, :general_log} of Supervisor Logger.Backends.Supervisor started
+Pid: #PID<0.114.0>
+Start Call: Logger.Backends.Watcher.start_link({{LoggerFileBackend, :general_log}, {LoggerFileBackend, :general_log}})
+Restart: :transient
+Shutdown: 5000
+Type: :worker
+11:51:21.676 [info] Child Logger.Backends.Supervisor of Supervisor Logger.Backends.Internal started
+Pid: #PID<0.113.0>
+Start Call: Logger.Backends.Supervisor.start_link([{LoggerFileBackend, :general_log}])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+11:51:21.676 [info] Child Logger.Backends.Internal of Supervisor Logger.Supervisor started
+Pid: #PID<0.109.0>
+Start Call: Logger.Backends.Internal.start_link([])
+Restart: :permanent
+Shutdown: :infinity
+Type: :supervisor
+11:51:21.677 [info] Application logger started at :nonode@nohost
+11:51:22.983 [error] FATAL: Lexical is not compatible with Elixir 1.18.0
+
+Lexical is compatible with the following versions of Elixir:
+
+  >= 1.13.0
+  >= 1.14.0
+  >= 1.15.3
+  >= 1.16.0
+  >= 1.17.0
+  >= 1.17.0-rc
+
