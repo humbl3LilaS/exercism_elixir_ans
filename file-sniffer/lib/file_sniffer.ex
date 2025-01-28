@@ -27,11 +27,9 @@ defmodule FileSniffer do
     end
   end
 
-  def verify(file_binary, extension) do
+  def verif(file_binary, extension) do
     ext = type_from_extension(extension)
     bi = type_from_binary(file_binary)
-    IO.puts("Binary #{bi}")
-    IO.puts(ext)
 
     if is_same_ext?(ext, bi) do
       {:ok, ext}
